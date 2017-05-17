@@ -1,0 +1,14 @@
+{% load comments %}
+<html>
+<body>
+	<h1>{{post.title}}</h1>
+	<h2>By {{post.author}}</h2>
+	{{post.body}}
+	<h2>Comments</h2>
+	{% get_comment_list for post as comment_list %}
+	{% for comment in comment_list %}
+	<blockquote>{{comment.comment}} <em>-by {{comment.user}}</em></blockquote>
+	{% endfor %}
+	{% render_comment_form for post %}
+</body>
+</html>

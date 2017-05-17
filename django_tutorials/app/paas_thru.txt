@@ -1,0 +1,1 @@
+Database=music_app;Data Source=br-cdbr-azure-south-b.cloudapp.net;User Id=bcc2f0e0f57d74;Password=d273c06f
